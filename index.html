@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   
     <!--- custom css link-->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="style/style.css">
   
     <!--- google font link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
 
         <aside class="sidebar" data-sidebar>
             <div class="sidebar-info">
-                <figure class="ava-box">
+                <figure class="avatar-box"> <!--avatar-box-->
                     <img src="assets/images/my-avatar.png" alt="Oop somethin wrong"> 
                 </figure>
 
@@ -32,9 +32,61 @@
                     <p class="title">Front End Engineer</p>
                 </div>
 
-                <button class="info-more-button" data-sidebar-btn="">
-
+                <button class="info-more-button" data-sidebar-btn> <!--info_more-btn-->
+                    <span class="info-more-button" data-sidebar-btn> Show Contact</span>
+                    <ion-icon name="chevron-down"></ion-icon>
                 </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-con name="mail-outline"></ion-con>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:mr.adhityabayu@gmail.com" class="contact-link">mr.adhityabayu@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                          </div>
+              
+                          <div class="contact-info">
+                            <p class="contact-title">Phone</p>+62 878 4567 2003</a>
+                        </div>
+                    </li>
+                    
+                    <li class="contact-item">
+                        <div class="icon-box">
+                          <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+            
+                        <div class="contact-info">
+                          <p class="contact-title">Birthday</p>
+            
+                          <time datetime="1982-06-23">June 23, 1982</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                          <ion-icon name="location-outline"></ion-icon>
+                        </div>
+            
+                        <div class="contact-info">
+                          <p class="contact-title">Location</p>
+            
+                          <address>Sacramento, California, USA</address>
+                        </div>
+            
+                      </li>
+                </ul>
             </div>
         </aside>
     </main>
